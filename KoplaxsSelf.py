@@ -23,14 +23,14 @@ sys.setdefaultencoding('utf-8')
 
 helpMessage ="""╔═════════════
 ║𖤓≛≛≛≛≛≛≛≛≛≛≛≛≛𖤓
-║       ✰૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮✰
+║   FerryhanDanNia
 ║𖤓≛≛≛≛≛≛≛≛≛≛≛≛≛𖤓
 ║╔════════════
-║╠[1]Status
+║╠[1]Set = status pada Bot
 ║╠[2]Bot?
 ║╠[3]Respon
 ║╠[4]Cctv→Ciduk
-║╠[5]Tagall
+║╠[5]Panggil
 ║╠[6]Banlist
 ║╠[7]Me
 ║╠[8]Info group
@@ -63,12 +63,12 @@ helpMessage ="""╔═════════════
 ║║★And More★
 ║╚════════════
 ║𖤓≛≛≛≛≛≛≛≛≛≛≛≛≛𖤓
-║     ૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮
+║   FerryhanDanNia
 ║𖤓≛≛≛≛≛≛≛≛≛≛≛≛≛𖤓
 ╚═════════════"""
 
 Setgroup =""" 
-    ૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮"""
+    FerryHandanNia"""
 KAC=[cl,ki,ki2]
 mid = cl.getProfile().mid
 kimid = ki.getProfile().mid
@@ -85,7 +85,7 @@ wait = {
     'autoAdd':True,
     'message':"""тerima Kasih Sudah Menambahkan Aku Jadi Teman
 ≫ Aku Ga Jawab PM Karna aq Cuma Bot ≪
-≫ ૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮ ≪
+≫ by ferryhandana ≪
 
 Ready:
 
@@ -95,7 +95,7 @@ Ready:
 
 ṡȗƿƿȏяṭєԀ ɞʏ:
   
-☆ ૦Ո૯ ƿɿ૯८૯ ੮૯คɱ ☆""",
+☆ FerryhanDanNia ☆""",
     "lang":"JP",
     "comment":"Thanks for add me",
     "commentOn":False,
@@ -269,7 +269,7 @@ def bot(op):
               elif op.param2 in owner:
                 pass
               else:
-                random.choice(KAC).sendText(op.param1, "Jangan Sok Jadi Jagoan Deh Lu Njir.\nAdmin Bukan,Owner Juga Bukan\Kick Ah 😛")
+                random.choice(KAC).sendText(op.param1, "Maaf Ya Kak Bukan Pelit.\nDemi Keamanan Kita Bersama 😛")
                 random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])   
         
         if op.type == 19:
@@ -563,7 +563,7 @@ def bot(op):
                   cl.sendText(msg.to,"The stafflist is empty")
               else:
                   cl.sendText(msg.to,"Tunggu...")
-                  mc = "||Admin ૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮||\n=====================\n"
+                  mc = "||Admin Bot FerryhanDanNia||\n=====================\n"
                   for mi_d in admin:
                       mc += "••>" +cl.getContact(mi_d).displayName + "\n"
                   cl.sendText(msg.to,mc)
@@ -1009,7 +1009,7 @@ def bot(op):
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Kick Joined Group Off")
                     else:
-                        cl.sendText(msg.to,"Kick Joined Gtoup Off�")
+                        cl.sendText(msg.to,"Kick Joined Group Off�")
                 else:
                     wait["Protectjoin"] = False
                     if wait["lang"] == "JP":
@@ -1311,7 +1311,7 @@ def bot(op):
                 if wait["autoAdd"] == True: md+="[•]Auto Add [On]\n"
                 else:md+="[•]Auto Add [Off]\n"
                 if wait["commentOn"] == True: md+="[•]Comment [On]\n"
-                else:md+="[•]Comment [Off]\n*============*\n✰૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮✰\n*============*"
+                else:md+="[•]Comment [Off]\n*============*\n✰Bot FerryhanDanNia✰\n*============*"
                 cl.sendText(msg.to,md)
             elif msg.text in ["Group id","Ginfo"]:
                 gid = cl.getGroupIdsJoined()
@@ -1596,7 +1596,7 @@ def bot(op):
     #-------------Fungsi Leave Group Finish---------------#
     
     #-------------Fungsi Tag All Start---------------#
-            elif msg.text in ["Tag all","Tagall"]:
+            elif msg.text in ["Panggil","panggil","Tagall"]:
             	 if msg.from_ in admin:
                   group = cl.getGroup(msg.to)
                   nama = [contact.mid for contact in group.members]
@@ -1703,8 +1703,8 @@ def bot(op):
                     gs = ki.getGroup(msg.to)
                     gs = ki2.getGroup(msg.to)
                     cl.sendText(msg.to,"Hello Kk")
-                    cl.sendText(msg.to,"One Piece Team Mau Bersih² Group Sampah Nih")
-                    cl.sendText(msg.to,"Karna Ini Group Sampah Jadi Mau Di Bersihin Dulu Yah\n★Jangan Baper...\n★Jangan Nangis\n★Jangan Cengeng\nBawa Enjoy Aja Kawan♪")
+                    cl.sendText(msg.to,"Bos Ferry Mau Bersih² Group Ini Dulu yaa")
+                    cl.sendText(msg.to,"Karna Di Group Ini Banyak Sampah Jadi Mau Di Bersihin Dulu Yah\n★Jangan Baper...\n★Jangan Nangis\n★Jangan Cengeng\nBawa Enjoy Aja Kawan♪")
                     msg.contentType = 13
                     msg.contentMetadata = {'mid': 'uc9363b5a4bfacd981c3e3c082bc4d5ef'}
                     cl.sendMessage(msg)
